@@ -1,17 +1,3 @@
-"""
-Usage:
-    Sign:   python rsa_signature.py sign <priv.pem> <message_file> <signature_output>
-    Verify: python rsa_signature.py verify <pub.pem> <message_file> <signature_file>
-
-Examples:
-    python rsa_signature.py sign priv.pem mess.txt sign.bin
-    python rsa_signature.py verify pub.pem mess.txt sign.bin
-
-OpenSSL:
-    Signing:   openssl pkeyutl -in <mess> -out <sign> -inkey <priv.pem> -sign
-    Verifying: openssl pkeyutl -in <mess> -sigfile <sign> -inkey <pub.pem> -pubin -verify
-"""
-
 import argparse
 import sys
 import os
